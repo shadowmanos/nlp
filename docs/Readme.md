@@ -1,4 +1,6 @@
-#### NLP cookbook for Java developers
+# NLP cookbook for Java developers
+
+### Intorduction
 
 I have gathered here some practical examples of [Natural Language
 Processing](https://en.wikipedia.org/wiki/Natural_language_processing),
@@ -17,3 +19,5 @@ of average complexity.
 
 *Disclaimer*: No [tribbles](https://en.wikipedia.org/wiki/Tribble)
 were harmed in the making of this repository.
+
+## Examples
