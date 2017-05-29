@@ -1,5 +1,3 @@
-# NLP cookbook for Java developers
-
 ### Introduction
 
 I have gathered here some practical examples of [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing),
@@ -20,4 +18,4 @@ were harmed in the making of this repository.
 
 ### Examples
 
-1. [Simple Example](intro/SimpleExample.md)
+1. [Simple CoreNLP Example](CoreNLP/SimpleExample/Readme.md)
