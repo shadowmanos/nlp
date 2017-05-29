@@ -19,3 +19,5 @@ adequately diverse and of average complexity.
 were harmed in the making of this repository.
 
 ### Examples
+
+1. [Simple Example](intro/SimpleExample.md)
