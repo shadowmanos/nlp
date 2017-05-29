@@ -22,12 +22,13 @@ class SimpleExample {
     }
 
     public static void main(String[] args) throws IOException {
-        // an appropriate sample text for starting our journey
+        // appropriate sample text for starting our journey
         final String text = "Space: the final frontier. " +
             "These are the voyages of the starship Enterprise. " +
             "Its continuing mission: to explore strange new worlds, " +
             "to seek out new life and new civilizations, " +
             "to boldly go where no one has gone before.";
+        // cue pompous music after the above
 
         // the Annotation instance, containing both input and output of the processing
         final Annotation document = new Annotation(text);
