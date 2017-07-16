@@ -1,11 +1,16 @@
+---
+title: NLP cookbook for Java developers
+---
+
 ### Introduction
 
 I have gathered here some practical examples of [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing),
 using Java libraries like [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/).
 
-The code and any accompanying documentation is written from a developer's
+The code and accompanying blog posts are written from a developer's
 rather than a PhD student's perspective. That reflects my personal experience from when
-I started doing NLP at work and I could find plenty of scientific papers but few code snippets.
+I started doing NLP at work. I could find plenty of scientific papers but few code snippets.
+Occasional references to linguistics or grammar will be in code monkey's terms.
 
 All text samples used for testing are Star Trek quotes
 (English not Klingon) sourced from either [Wikipedia](https://en.wikipedia.org/wiki/Star_Trek) or
@@ -18,4 +23,4 @@ were harmed in the making of this repository.
 
 ### Examples
 
-1. [Simple CoreNLP Example](CoreNLP/SimpleExample/Readme.md)
+1. [BabySteps](CoreNLP/BabySteps/Readme.md)

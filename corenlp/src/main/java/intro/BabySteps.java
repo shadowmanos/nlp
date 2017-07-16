@@ -1,12 +1,14 @@
 package intro;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Properties;
+import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.JSONOutputter;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 
-class SimpleExample {
+class BabySteps {
     private static final StanfordCoreNLP pipeline;
 
     static {
@@ -28,15 +30,21 @@ class SimpleExample {
             "Its continuing mission: to explore strange new worlds, " +
             "to seek out new life and new civilizations, " +
             "to boldly go where no one has gone before.";
-        // cue pompous music after the above
+        // cue pompous theme music
 
         // the Annotation instance, containing both input and output of the processing
-        final Annotation document = new Annotation(text);
+        final Annotation annotation = pipeline.process(text);
 
-        // process the text and store the result in Annotation instance
-        pipeline.annotate(document);
+        // POS tag of "explore"
+        final String explorePOStag = annotation.get(TokensAnnotation.class)
+            .stream()
+            .filter(label -> label.originalText().equals("explore"))
+            .findFirst()
+            .map(CoreLabel::tag)
+            .orElse(null);
+        System.out.println(explorePOStag);
 
         // output the annotation at stdout as a JSON
-        pipeline.jsonPrint(document, new PrintWriter(System.out));
+        JSONOutputter.jsonPrint(annotation, System.out);
     }
 }
