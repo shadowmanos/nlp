@@ -1,5 +1,5 @@
 ---
-Simple CoreNLP Example
+title: Simple CoreNLP Example
 ---
 
 ### Show me the code
