@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+title: NLP cookbook for Java developers
 show_downloads: true
 author: Manos Nikolaidis
 gems:

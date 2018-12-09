@@ -23,4 +23,4 @@ were harmed in the making of this repository.
 
 ### Examples
 
-1. [BabySteps](CoreNLP/BabySteps/Readme.md)
+1. [BabySteps](CoreNLP/BabySteps/README.md)
