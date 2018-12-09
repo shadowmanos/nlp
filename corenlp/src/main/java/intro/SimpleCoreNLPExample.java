@@ -8,11 +8,11 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.JSONOutputter;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 
-class BabySteps {
+class SimpleCoreNLPExample {
     private static final StanfordCoreNLP pipeline;
 
     static {
-        final Properties props = new Properties();
+        Properties props = new Properties();
 
         // tokenize: split the text in tokens (words and punctuation)
         // ssplit: group the above tokens in sentences according to punctuation
@@ -25,7 +25,7 @@ class BabySteps {
 
     public static void main(String[] args) throws IOException {
         // appropriate sample text for starting our journey
-        final String text = "Space: the final frontier. " +
+        String text = "Space: the final frontier. " +
             "These are the voyages of the starship Enterprise. " +
             "Its continuing mission: to explore strange new worlds, " +
             "to seek out new life and new civilizations, " +
@@ -33,10 +33,10 @@ class BabySteps {
         // cue pompous theme music
 
         // the Annotation instance, containing both input and output of the processing
-        final Annotation annotation = pipeline.process(text);
+        Annotation annotation = pipeline.process(text);
 
         // POS tag of "explore"
-        final String explorePOStag = annotation.get(TokensAnnotation.class)
+        String explorePOStag = annotation.get(TokensAnnotation.class)
             .stream()
             .filter(label -> label.originalText().equals("explore"))
             .findFirst()
